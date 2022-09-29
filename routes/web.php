@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\SliderController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +34,12 @@ Route::get('/panier', [ClientController::class, 'panier']);
 Route::get('/paiement', [ClientController::class, 'paiement']);
 Route::get('/login', [ClientController::class, 'login']);
 Route::get('/signup', [ClientController::class, 'signup']);
+
+Route::get('/admin', [AdminController::class, 'dashboard']);
+
+Route::get('/addcategory', [CategoryController::class, 'addcategory']);
+
+Route::get('/addslider', [SliderController::class, 'addslider']);
+
+Route::get('/addproduct', [ProductController::class, 'addproduct']);
+
