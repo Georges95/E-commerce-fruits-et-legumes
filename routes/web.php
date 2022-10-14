@@ -38,6 +38,7 @@ Route::get('/signup', [ClientController::class, 'signup']);
 Route::get('/admin', [AdminController::class, 'dashboard']);
 
 Route::get('/addcategory', [CategoryController::class, 'addcategory']);
+Route::get('/categories', [CategoryController::class, 'categories']);
 
 Route::get('/addslider', [SliderController::class, 'addslider']);
 
